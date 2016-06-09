@@ -1,3 +1,6 @@
+/*****************/
+/*Universal Stylings*/
+/*****************/
 * {
     box-sizing: border-box;
 }
@@ -6,3 +9,63 @@ body{
     font-family: 'Merriweather', serif;
 }
 
+/*****************/
+/*Text Stylings*/
+/*****************/
+
+header,
+h2,
+#intro{
+    text-align: center;
+}
+
+/*****************/
+/*Element Look Stylings*/
+/*****************/
+
+fieldset,
+input,
+textarea{
+    border: 0;
+}
+
+
+
+/*****************/
+/*Layout Stylings*/
+/*****************/
+
+p,
+#contact_info input,
+#contact_info label,
+button{
+    display: block; 
+}
+
+textarea,
+button{
+    width: 100%;
+}
+
+form{
+    width: 90%;
+}
+
+h1,
+h2,
+p{
+    margin: 0;
+}
+{
+    padding:0;
+}
+
+form,
+textarea,
+button{
+    margin: 0 auto;
+}
+
+textarea {
+    resize: none;
+}
