@@ -1,6 +1,7 @@
-/*****************/
-/*Universal Stylings*/
-/*****************/
+/**************************/
+/****Universal Stylings****/
+/**************************/
+
 * {
     box-sizing: border-box;
 }
@@ -9,31 +10,110 @@ body{
     font-family: 'Merriweather', serif;
 }
 
-/*****************/
-/*Text Stylings*/
-/*****************/
+/*****************************/
+/****Element Look Stylings****/
+/*****************************/
 
-header,
-h2,
-#intro{
-    text-align: center;
+
+/****Background Colours****/
+
+header {
+    background-color: #2b3946;
 }
 
-/*****************/
-/*Element Look Stylings*/
-/*****************/
+button {
+    background-color: #00c1b7;
+}
+
+input,
+textarea,
+select{
+    background-color: #eff0f1;
+}
+
+/****Borders & Outlines****/
+
+#contact_info input:focus,
+#contact_info select:focus,
+textarea:focus,
+select:focus{
+    outline: solid 2px #41688D;
+}
+
+#intro {
+    border-bottom: 3px solid #2b3946;
+}
+
+.border-top {
+    border-top: solid 2px #2b3946
+}
 
 fieldset,
 input,
-textarea{
-    border: 0;
+textarea,
+select,
+button{
+    border: none;
+}
+
+/****Select Change Arrow Styling****/
+
+select {
+    background: transparent;
+    -webkit-appearance: none;
+}
+
+.styled-select {
+    background: url(../img/down_arrow.png) no-repeat right #eff0f1;
 }
 
 
+/****Checkbox Change Tick Styling****/
 
-/*****************/
-/*Layout Stylings*/
-/*****************/
+
+
+/*********************/
+/****Text Stylings****/
+/*********************/
+
+header,
+h2,
+#intro,
+footer{
+    text-align: center;
+}
+
+#intro,
+footer {
+    color: #eff0f1;
+}
+
+button,
+h1 {
+    color: white;
+}
+
+h2,
+legend,
+label{
+    color: #2b3946;
+}
+
+input:-moz-placeholder {
+    text-align: right;
+}
+input:-ms-input-placeholder {
+    text-align: right;
+}
+input::-webkit-input-placeholder {
+    text-align: right;
+}
+
+/*************************************/
+/****Positioning & Layout Stylings****/
+/*************************************/
+
+/****Element Specific****/
 
 p,
 #contact_info input,
@@ -42,8 +122,14 @@ button{
     display: block; 
 }
 
+textarea {
+    resize: none;
+}
+
 textarea,
-button{
+button,
+#contact_info input,
+#contact_info select{
     width: 100%;
 }
 
@@ -51,11 +137,16 @@ form{
     width: 90%;
 }
 
+
+
+/****Margin & Paddings****/
+
 h1,
 h2,
 p{
     margin: 0;
 }
+
 {
     padding:0;
 }
@@ -66,6 +157,3 @@ button{
     margin: 0 auto;
 }
 
-textarea {
-    resize: none;
-}
