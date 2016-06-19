@@ -56,6 +56,21 @@ button{
     border: none;
 }
 
+/****Height/Width****/
+
+#contact_info input,
+select{
+    height: 2.4em;
+}
+
+textarea {
+    height: 6em;
+}
+
+button {
+    height: 3em;
+}
+
 /****Select Change Arrow Styling****/
 
 select {
@@ -73,7 +88,7 @@ select {
 
 
 /*********************/
-/****Text Stylings****/
+/****Font Stylings****/
 /*********************/
 
 header,
@@ -85,7 +100,7 @@ footer{
 
 #intro,
 footer {
-    color: #eff0f1;
+    color: lightslategray;
 }
 
 button,
@@ -97,6 +112,46 @@ h2,
 legend,
 label{
     color: #2b3946;
+}
+
+p,
+label{
+    font-weight: 300;
+}
+
+h1{
+    font-weight: 400;
+}
+
+h2,
+legend{
+    font-weight: 700;
+}
+
+h1,
+h2,
+legend,
+button{
+    font-size: 1.2em;
+}
+
+p,
+label{
+    font-size: 1em;
+}
+
+h1{
+    letter-spacing: .05em;
+}
+
+h2,
+legend{
+    letter-spacing: 0.02em;
+}
+
+p,
+label{
+    line-height: 1.2em;
 }
 
 input:-moz-placeholder {
@@ -145,10 +200,6 @@ h1,
 h2,
 p{
     margin: 0;
-}
-
-{
-    padding:0;
 }
 
 form,
