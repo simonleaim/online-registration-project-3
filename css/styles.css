@@ -33,11 +33,20 @@ select{
 
 /****Borders & Outlines****/
 
+#contact_info input,
+#contact_info select,
+textarea,
+select,
+button{
+border-radius: 5px;
+}
+
 #contact_info input:focus,
 #contact_info select:focus,
 textarea:focus,
 select:focus{
-    outline: solid 2px #41688D;
+    outline: none;
+    border: solid 2px #41688D;
 }
 
 #intro {
@@ -60,11 +69,11 @@ button{
 
 #contact_info input,
 select{
-    height: 2.4em;
+    height: 3em;
 }
 
 textarea {
-    height: 6em;
+    height: 10em;
 }
 
 button {
@@ -98,6 +107,10 @@ footer{
     text-align: center;
 }
 
+footer{
+    font-style: italic;
+}
+
 #intro,
 footer {
     color: lightslategray;
@@ -105,7 +118,7 @@ footer {
 
 button,
 h1 {
-    color: white;
+    color: #fff;
 }
 
 h2,
@@ -115,7 +128,9 @@ label{
 }
 
 p,
-label{
+label,
+input,
+select{
     font-weight: 300;
 }
 
@@ -145,23 +160,29 @@ h1{
 }
 
 h2,
-legend{
+legend,
+footer{
     letter-spacing: 0.02em;
 }
 
-p,
-label{
+p {
     line-height: 1.2em;
 }
 
 input:-moz-placeholder {
     text-align: right;
+    font-style: italic;
+    font-size: .9em;
 }
 input:-ms-input-placeholder {
     text-align: right;
+    font-style: italic;
+    font-size: .9em;
 }
 input::-webkit-input-placeholder {
     text-align: right;
+    font-style: italic;
+    font-size: .9em;
 }
 
 /*************************************/
@@ -192,19 +213,72 @@ form{
     width: 90%;
 }
 
-
-
-/****Margin & Paddings****/
-
-h1,
-h2,
-p{
-    margin: 0;
+input[name="user_zip"] {
+    max-width: 50%;
 }
+/****Margin & Paddings****/
 
 form,
 textarea,
-button{
+buttonh1,
+h1,
+h2,
+fieldset{
     margin: 0 auto;
+}
+
+h2{
+    margin: 1.5em 0 1em 0;
+}
+
+#intro {
+    margin: 0 0 .2em 0;
+}
+
+input,
+.styled-select,
+footer{
+    margin: .5em 0;
+}
+
+textarea {
+    margin: 1em 0 2em 0;
+}
+
+input[id="js_news"],
+#plain_format,
+input[id="zip"]{
+    margin-bottom: 1.5em;
+}
+
+button,
+{
+    margin: 1em 0;
+}
+
+span {
+    margin: 0 .3em ;
+}
+
+fieldset {
+    padding: 0
+}
+
+#contact_info input,
+select{
+    padding: 0 5%; 
+}
+
+h1,
+legend{
+    padding: 1em 0;
+}
+
+#intro{
+    padding: 0 0 2em 0;
+}
+
+label {
+    padding: 1em 0 0;
 }
 
