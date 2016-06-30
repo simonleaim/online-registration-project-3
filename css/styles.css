@@ -4,6 +4,10 @@
 
 * {
     box-sizing: border-box;
+/*
+    border: solid 1px red;
+    outline: solid 1px red;
+*/
 }
 
 body{
@@ -251,7 +255,7 @@ input[id="zip"]{
     margin-bottom: 1.5em;
 }
 
-button,
+button
 {
     margin: 1em 0;
 }
@@ -282,3 +286,47 @@ label {
     padding: 1em 0 0;
 }
 
+textarea {
+ padding: 2%;
+}
+
+@media (min-width:760px){
+    form,
+    #contact_info input,
+    .styled-select{
+        width: 60%;
+    }
+    
+    #zip {
+        max-width: 30%;
+    }
+    
+    #contact_info label,
+    #contact_info input, 
+    .styled-select,
+    select {
+        float: left;
+    }
+    
+    #contact_info label {
+        height: 3em;   
+    }
+    
+    textarea {
+        height: 7em;
+    }
+    
+    #contact_info label {
+        width: 40%;
+        
+    }
+    
+    #contact_info label {
+        margin: 0.5em 0;
+        
+    }
+    
+    button {
+        margin-top: 0;
+    }
+}
