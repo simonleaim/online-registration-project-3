@@ -251,6 +251,7 @@ textarea {
 
 input[id="js_news"],
 #plain_format,
+#monthly_freq,
 input[id="zip"]{
     margin-bottom: 1.5em;
 }
@@ -288,6 +289,17 @@ label {
 
 textarea {
  padding: 2%;
+}
+
+
+@media (min-width: 425px){
+    
+    .two-col {
+        width: 50%;
+        float: left;
+    }
+    
+    
 }
 
 @media (min-width:760px){
@@ -329,4 +341,15 @@ textarea {
     button {
         margin-top: 0;
     }
+    
+    .two-col {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+
+.clearfix {
+  overflow: auto;
 }

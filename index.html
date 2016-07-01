@@ -30,7 +30,7 @@
             <input type="email" id="email" name="user_email" placeholder="Required" required >
             
             <label for="number">Phone Number</label>
-            <input type="tel" id="number" name="user_number">
+            <input type="tel" id="number" name="user_number" placeholder="me@domain.com">
             
             <label for="street">Street Address</label>
             <input type="text" id="street" name="user_street">
@@ -64,7 +64,7 @@
             </select>
             </div>
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="user_zip">
+            <input type="text" id="zip" name="user_zip" placeholder="xxx-xxx">
             
         </fieldset>
         </div>
@@ -72,7 +72,7 @@
         <fieldset id="newsletter_format">
             
             <legend>Newsletter</legend>
-            
+            <div class="three-col">
             <p>Select the newsleter you would like to receive</p>
             
             <input type="checkbox" value="html_news" id="html_news" name="news_type">
@@ -83,7 +83,9 @@
             <br>
             <input type="checkbox" value="js_news" id="js_news" name="news_type">
             <label for="js_news"><span>Javascript News</span></label>
-            
+            </div>
+            <div class="clearfix">
+            <div class="three-col two-col">
             <p>Newsletter format</p>
             
             <input type="radio" value="html_format" id="html_format" name="format">
@@ -91,6 +93,17 @@
             <br>
             <input type="radio" value="plain_format" id="plain_format" name="format">
             <label for="plain_format"><span>Plain text</span></label>
+            </div>
+            <div class="three-col two-col">
+             <p>Frequency</p>
+            
+            <input type="radio" value="daily_freq" id="daily_freq" name="frequency">
+            <label for="daily_freq"><span>Daily</span></label>
+            <br>
+            <input type="radio" value="weekly_freq" id="weekly_freq" name="frequency">
+            <label for="weekly_freq"><span>Weekly</span></label>
+            </div>
+            </div>
             <br>
             <label for="suggestion">Other topics you'd like to hear about</label>
             <textarea id="suggestion" name="user_suggestion"></textarea>
