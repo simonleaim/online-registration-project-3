@@ -21,6 +21,14 @@ body{
 
 /****Background Colours****/
 
+
+input:focus,
+select:focus,
+textarea:focus{
+    background: lightgrey;
+    transition-property: background;
+}
+
 header {
     background-color: #2b3946;
 }
@@ -33,6 +41,7 @@ input,
 textarea,
 select{
     background-color: #eff0f1;
+    transition-duration: .5s;
 }
 
 /****Borders & Outlines****/
@@ -353,3 +362,5 @@ textarea {
 .clearfix {
   overflow: auto;
 }
+
+
