@@ -4,20 +4,16 @@
 
 * {
     box-sizing: border-box;
-/*
-    border: solid 1px red;
-    outline: solid 1px red;
-*/
 }
 
 body{
     font-family: 'Merriweather', serif;
+    background: url("../img/background.jpg")
 }
 
 /*****************************/
 /****Element Look Stylings****/
 /*****************************/
-
 
 /****Background Colours****/
 
@@ -40,7 +36,7 @@ button {
 input,
 textarea,
 select{
-    background-color: #eff0f1;
+    background-color: white;
     transition-duration: .5s;
 }
 
@@ -103,9 +99,6 @@ select {
 .styled-select {
     background: url(../img/down_arrow.png) no-repeat right #eff0f1;
 }
-
-
-/****Checkbox Change Tick Styling****/
 
 
 
